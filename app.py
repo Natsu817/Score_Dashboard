@@ -63,7 +63,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # ユーザー入力
-if query := st.chat_input("いもむしカンパニー 2023年の情報.../ 乃木坂合同会社の2023年と2024年を比較して"):
+if query := st.chat_input("いもむしカンパニー 2023年の情報..."):
     st.session_state.messages.append({"role": "user", "content": query})
     with st.chat_message("user"):
         st.markdown(query)
